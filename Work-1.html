@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html  lang="en">
+    <head>
+        <style>h1{text-align: center;}
+      h1{color: rgb(247, 233, 36);}
+      h2{color: aqua;}
+        title{animation: forwards;}
+        body{background-color: rgb(238, 155, 162);}
+            ol{border: transparent;}
+            ol{background: rgb(165, 194, 4);}
+            p{font-size: large;}
+            p{font-family: 'Times New Roman', Times, serif;}
+        body{
+            display: grid;
+            grid-template-columns: repeat(12,1fr);
+            grid-template-rows: auto auto auto auto auto;
+            gap: 20px;
+        }    
+        h1{
+            grid-column: 1 / -1;
+            text-align: center;
+            color: rgb(247, 233, 36);
+        }
+
+        h2{
+            grid-column: 1 / -1;
+            color: aqua;
+        }
+
+        p{ 
+           grid-column: 1 / -1;
+           font-size: large;
+           font-family: 'Times New Roman', Times, serif; 
+        }
+
+        figure{
+            grid-column: 1/ -1;
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        figcaption {
+            text-align: center;
+            font-style: italic;
+        }
+
+        ol {
+            grid-column: 1/ -1;
+            border: transparent;
+            background: rgb(165, 194, 4);
+        }
+
+        h3 {
+            grid-column: 1/-1;
+
+        }
+
+        iframe {
+            grid-template-columns: repeat(12, 1fr);
+            margin: 0 auto;
+            display: block;
+        }
+
+        @media (min-width: 768px) {
+            body{
+                grid-template-columns: repeat(12, 1fr);
+                grid-template-rows: auto auto auto;
+            }
+
+            .link {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: o;
+                height: 100vh;
+                width: 200px;
+
+            }
+
+            .row {
+                flex-direction: column;
+            }
+
+            .link a {
+                margin-right: 0;
+                margin-bottom: 10px;
+
+            }
+
+            .link a:last-child{
+                margin-bottom: 0;
+            }
+
+            main {
+                flex-grow: 1;
+                padding: 20px;
+            }
+        }
+
+        h1 {
+            grid-column: 2/12;
+
+        }
+
+        h2 {
+            grid-column: 2/12;
+        }
+
+        p{
+            grid-column: 2/12;
+
+        }
+
+        figure{
+            grid-column: 2/12;
+
+        }
+
+        ol{
+            grid-column: 2/12;
+        }
+
+        h3{
+            grid-column: 2/12;
+        }
+
+        iframe{
+            grid-column: 2/12;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .links {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            background-color: rgb(189, 169, 235);
+            flex-wrap: wrap;
+            flex: 1;
+        }
+
+        .links a {
+            text-decoration: wavy;
+            color:rgb(100, 57, 5);
+            font-weight: bold;
+            margin-right: 20px;
+        }
+
+        .links a:last-child {
+            margin-right: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .item {
+            width: 33.33%;
+        }
+
+        @media screen and (max-width: 600px){
+            .item {
+                width: 50%;
+            }
+        }
+         @media screen and (max-width: 400px) {
+            .item {
+                width: 100%;
+                         }
+        }
+            
+        
+
+
+
+        
+       </style>
+        <meta charset="utf-8"/>
+        <title>The World Cup Suprise</title>
+    </head>
+     <body>
+        <nav class="links">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+
+        </nav>
+        <main>
+            <h1>Africa's Wonder Team!!!</h1>
+            <h2>Morocco's Amaizing World Cup Performance:</h2>
+            <p>Morocco has appeared in the FIFA World Cup five times, with their best performance coming in 1986 when they reached the round of 16.
+               They have never progressed beyond the round of 16.
+                Morocco qualified for the 2018 World Cup, but did not advance from the group stage.
+               In their group, they lost to Iran and Portugal and drew with Spain. </p> 
+            <p>In 2022, the world witnssed one of the best football (Soccer for North Americans) tournaments that was hosted by Qatar.
+               In this edition of the tournament, Morocco was the first African and Arab nation that qualifies to the semi finals, after huge game against Portugal.
+                The team had thier revenge after 4 years aginst Spain and Portugal, that Morocco lost to them in the past tournament.</p>
+            <figure>
+                <picture>
+                <img src="First_goal.webp" width="480" height="360" alt="Morocoan Players Celebreting Scoring Goal Against Portgual.">
+                <figcaption>Morocco's <em>Goal</em> vs Portgual.</figcaption>
+                </picture>
+            </figure>
+            <p>Unfortunatly Morocco's winnig streak came to  an end when it faces France in the semi final. Despit the amazing performance, the Atlas lions -Morocco- lost to the winner of the world cup from the last eidiotn.
+                 It was great match and still a big win for the fans.
+                 As no one expected this huge and amazing work from them, they have won the hurts of the world</p>
+                 
+             <h3>Top 4 teams in the tournament:</h3>
+             <ol>
+                <li>Argentina"The winner"</li>
+                <li>France</li>
+                <li>Coratia</li>
+                <li>Morocco</li>
+             </ol>
+
+
+
+
+            <p>Below is a link to YouTube video that shows the journey that Morocco went through.</p>
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/3GFYJ458WzE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    
+        </main>
+    </body>
+</html>
