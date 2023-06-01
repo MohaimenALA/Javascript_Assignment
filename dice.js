@@ -32,6 +32,13 @@ function rollDice() {
 
     let diceTotal = 0
     
+    for (let i = 0; i < dice.length; i++) {
+        const die = dice[i];
+        const rollValue = die.roll();
+        diceTotal += rollValue;
+        const dieElement = document.getElementById("die" + (i+1));
+        dieElement.innerHTML = rollValue;
+    }
 
     const totalElement = document.createElement("div");
     totalElement.textContent = "Total: " + diceTotal;
@@ -40,7 +47,7 @@ function rollDice() {
     status.innerHTML = "";
     status.appendChild(totalElement);
 
-    if (d1 === d2 && d2 === d3 && d3 === d4 && d4 === d5) {
+    if (dice.every(die => die.getValue() === dice[0].getValue())) {
         const yahtzeeElement = document.createElement("span");
         yahtzeeElement.textContent = "Yahtzee!";
         yahtzeeElement.classList.add("yahtzee");

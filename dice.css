@@ -1,0 +1,57 @@
+h2 {
+    clear: left;
+}
+
+.game-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 50px);
+    padding: 10px;
+    
+}
+/* body {
+    border: 20px;
+    border-bottom: 10px;
+    border-color: blanchedalmond;
+    padding: auto;
+    contain-intrinsic-block-size: 4px;
+} */
+
+button {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    transform: translateX(-50%);
+    font-size: 18px;
+    background-color: aqua;
+    text-align: center;
+}
+
+.total {
+    float: left;
+    margin: 20px;
+    color: black;
+}
+
+.yahtzee {
+    float: right;
+    margin: 20px;
+    color: red;
+}
+
+
+.dice {
+    float: left;
+    width: 32px;
+    background: #f5f5f5;
+    border: #999 1px solid;
+    padding: 10px;
+    font-size: 24px;
+    text-align: center;
+    margin: 5px;
+}
